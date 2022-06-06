@@ -1,0 +1,25 @@
+{
+  "name": "ticket-supporter",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "description": "",
+  "homepage_url": "https://github.com/hayate4th/ticket-supporter",
+  "action": {
+    "default_title": "ticket-supporter"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.netkeiba.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "all_frames": true
+    }
+  ],
+  "options_page": "options.html"
+}

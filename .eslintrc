@@ -1,0 +1,27 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+        "@cybozu/eslint-config/presets/react-typescript-prettier"
+    ],
+    "env": {
+        "node": true,
+        "webextensions": true
+    },
+    "globals": {
+        "document": true,
+        "window": true,
+        "MutationObserver": true,
+        "fetch": true
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "import/resolver": "webpack",
+        "react": {
+            "version": "detect"
+        }
+    }
+}
